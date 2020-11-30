@@ -1,2 +1,5 @@
 # Project exclude paths
 /target/
+
+# jdbc config
+/src/main/resources/jdbc.properties

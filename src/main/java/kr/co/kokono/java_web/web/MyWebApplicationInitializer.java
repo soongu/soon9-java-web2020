@@ -1,13 +1,14 @@
 package kr.co.kokono.java_web.web;
 
 
+import kr.co.kokono.java_web.config.MvcConfiguration;
 import kr.co.kokono.java_web.config.WebAppConfiguration;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 public class MyWebApplicationInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return null;
+        return new Class<?>[] {MvcConfiguration.class};
     }
 
     @Override
